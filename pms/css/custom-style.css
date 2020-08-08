@@ -1,0 +1,714 @@
+
+/*PRELOADING------------ */
+#preLoadOverlayer {
+  width:100%;
+  height:100%;
+  position:absolute;
+  z-index:99;
+  background:#eaeaea;
+}
+#preloadContainer {
+    margin: 0 auto;
+    width: max-content;
+}
+.preload {
+    top: 35%;
+    z-index: 999;
+    width: 110px;
+    height: 110px;
+    color: #555555;
+    font-size: 15px;
+    background: #fff;
+    position: absolute;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 0 10px #6663;
+    font-family: verdana, arial;
+}
+p.loadingText {
+    margin: 0;
+}
+.loadingText {
+    animation: loadingText 3s infinite ease;
+}
+@keyframes loadingText {
+    0%   { opacity: .9; }
+    16% { opacity: .7; }
+    35% { opacity: .4; }
+    50% { opacity: .5; }
+    66% { opacity: .7; }
+    83% { opacity: .8; }
+    100% { opacity: 1; }
+}
+
+#photoLabel {
+    padding: 5px 0 0 10px;
+    width: 200px;
+    height: 32px;
+    float: left;
+    cursor: pointer;
+    border: 1px solid silver;
+    border-radius: 2px;
+    box-shadow: 0 0 4px;
+}
+#photo, #settingsSubmit {
+    display: none;
+}
+    #plus {
+        float: right;
+        padding: 2px 14px 5px 14px;
+    }
+    .table tbody tr td {
+        padding:  8px;
+    }
+    .table tbody tr td:first-child {
+        padding:  3px;
+    }
+    .input-co td > .form-control {
+        padding-left: 15px;
+        font-size: 16px;
+    }
+    .input-co td > .form-control:hover {
+        box-shadow: 0 0 7px silver;
+        border-radius: 4px;
+    }
+    #anotherCostTable th {
+        padding-left: 20px;
+    }
+    .input-co td:first-child {
+        font-weight: bold;
+        padding-left: 20px;
+    }
+    #costHead {
+        text-align: center;
+    }
+    #costHead span {
+        color: white;
+        background: teal;
+        padding: 5px 100px 6px 100px;
+        border: 1px solid silver;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+    .delete-i {
+        color: #ff5700;
+        display: none;
+        transition: all .8s;
+    }
+    .done-i {
+        color: teal;
+        display: block;
+        transition: all .8s;
+    }
+    .icon-c {
+        height: 30px;
+        width: 30px;
+        float: right;
+        cursor: pointer;
+        margin: -20px 3px 0 0;
+    }
+    #costDa tr:hover > td > span > .delete-i {
+        display: block;
+    }
+    #costDa tr:hover > td > span > .done-i {
+        display: none;
+    }
+    #costDa tr td:nth-child(4) input {
+        max-width: 80%;
+        min-width: 200px;
+        margin-top: 5px;
+    }
+    .number_er, .check_er, .alphabet_er {
+        color: red;
+        display: none;
+    }
+    #totalAdd {
+       text-align: right;
+       padding-right: 48%;
+    }
+    .totalCount-v {
+        width: 150px;
+        margin: 0 auto;
+    }
+    .totalCount-v #totalAdd {
+        text-align: center;
+        padding-right: 5px;
+    }
+    .cost-view .table tbody tr td {
+        padding:  3px 10px;
+    }
+    #costView  tr td {
+        padding: 14px 8px 0 8px;
+    }
+    #costView  tr td:last-child {
+        padding: 0;
+    }
+
+   .userImg {
+      width: 42px;
+    height: 45px;
+    float: left;
+    margin: 0 8px 0 0;
+   }
+   .userImg+p {
+    margin: 10px 0 0 0;
+   }
+   .userImg img {
+      width: 42px;
+      height: 45px;
+      object-fit: cover
+   }
+   .cu-btn {
+      padding: 5px 8px;
+      width: auto;
+   }
+   .total-cost {
+      width: 400px;
+      margin: 0 auto;
+      margin-top: 50px;
+      margin-bottom: 25px;
+   }
+.total-cc {
+    width: 100%;
+    display: block;
+    text-align: left;
+    border-radius: 5px;
+    padding: 12px 20px 13px 18px;
+    border: 2px solid rgba(0, 0, 0, .15);
+    box-shadow: 0 0 12px rgba(0, 0, 0, .175);
+}
+.label-fc {
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    text-align: left;
+    border-radius: 2px;
+    padding:.5em 1em .6em;
+}
+#expenses_details_tbody td span.label-success {
+    background-color: #0a7b0a;
+}
+#expenses_details_tbody td span.label-warning {
+    background-color: #f77400;
+}
+
+   .total-cc h2 {
+      margin: 0;
+   }
+   .to-hide button {
+      display: none;
+   }
+   .bootstrap-select {
+      border: 0;
+      padding: 0;
+   }
+   .option-c {
+       padding-right: 0;
+       margin: 68px 0 0 0;
+   }
+   .costdetails .option-c {
+       margin: 68px 0 8px 0;
+   }
+   .currency {
+        float: right;
+   }
+   .currency-c {
+       min-width: 218px;
+    }
+   .notFound {
+       text-align: center;
+       color: #333;
+    }
+    #userTable_filter, #userTable_length{
+        display: none;
+    }
+
+.userInfo {
+    width: 550px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+.background-c {
+    position: relative;
+    height: 133px;
+    padding: 60px 0 0 0;
+    background: #009bbd;
+    margin-bottom: 120px;
+    border-radius: 8px 8px 0 0;
+}
+.userimg {
+    position: relative;
+    height: 118px;
+    width: 115px;
+    margin: 0 auto;
+}
+.circle {
+    height: 116px;
+    width: 115px;
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #00b9e269;
+    box-shadow: 0 0 5px #8c9191;
+}
+.circle img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.userName {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.userdetails {
+
+      width: 85%;
+    margin: 0 auto;
+}
+
+.user-dropdown {
+    float: right;
+    margin: 5px 8px 0 0;
+    border-radius: 50%;
+    height: 65px;
+
+}
+.btn-group.user-dropdown {
+    box-shadow: 0 0 0 #273380, 0 0 0 #273380;
+}
+.user-dropdown button {
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 0;
+    margin: 4px 5px 0 0;
+    border: 0;
+}
+.user-dropdown img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.user-dropdown .dropdown-menu {
+    margin: 1px 0 0 -95px !important;
+}
+.dropdown-toggle {
+    height: 50px;
+    width: 50px;
+}
+.user-dropdown .btn-group, .btn-group-vertical{
+    box-shadow: 0 0 0;
+}
+.earn .total-cc {
+   width: 100%;
+}
+
+.earn {
+    float: left;
+   margin-top: 30px;
+}
+.dt-buttons {
+   margin: -40px 0 0 10px;
+}
+.memo-view {
+   position: relative;
+}
+.memo-view-c {
+   width: 60px;
+   float: right;
+   position: absolute;
+   right: 18%;
+   top: -60px;
+}
+.memo-view-c .thumbnail {
+   border-radius:5px;
+}
+.memo-view-c [class^=col] {
+   padding:0;
+}
+
+.datepicker-top-left, .datepicker-top-right {
+   border-top-color: #d4d4d4;
+}
+.registerPage {
+    background-color: #00BCD4;
+}
+.registerPage .alert {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: -4%;
+    margin-top: 1px;
+    border-radius: 5px;
+}
+.registerPage .signup-page, .registerPage .login-page {
+    max-width: 370px;
+    border-radius: 5px;
+}
+.forgot input {
+    margin: 0 0 20px 0;
+}
+.forgot a {
+    padding: 0 0 0 8px;
+}
+.forgot_c a {
+    float: right;
+    margin: 15px 5px 0 0;
+}
+.redColor {color:red;}
+.msg p {
+  text-align: center;
+}
+.setEmail-i {
+    padding: 0;
+    font-size: 40px;
+    margin: 0 0 20px 42%;
+    line-height: 25px;
+    float: left;
+}
+.hider, .parsentage {display: none;}
+.partner p, .maneger p {padding: 0 5px 15px 0;}
+.clickDisabled {pointer-events: none;}
+.cash-select{
+    margin: 0 0 35px 0;
+    padding: 10px 20px 0 0;
+}
+#tbody tr td, #tableBody tr td,
+#userTable tr td{
+    padding: 8px;
+}
+#userTable tr td:nth-child(1),
+#tableBody tr td:nth-child(1) {
+    padding: 2px;
+}
+.card, .user-head {
+    padding: 10px;
+}
+.user-head h2 {
+    text-align: center;
+}
+.costdetails .option-m {
+    margin: 60px 0 -35px 0;
+}
+
+#emailDiv {
+    border: 2px solid rgba(0, 0, 0, .15);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    padding: 12px 20px 20px 18px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .175);
+}
+.placeInfo {
+    margin: -5px 0 0 0;
+    font-size: 12px;
+    color: lightslategray;
+}
+.emailBox {
+    background-color: #fff;
+}
+.emailBox .card {
+    border-radius: 5px;
+}
+.email-box {
+    width: 370px;
+    margin: 25px auto;
+}
+.email-box .logo {
+    text-align: center;
+    color: #333;
+    padding: 0 0 25px 0;
+}
+.email-box .logo a {
+    font-size: 30px;
+    color: #333;
+    text-decoration: none;
+}
+.emailTabel tbody tr td {
+    padding: 8px;
+}
+.emailView {
+    width: 360px;
+    margin: 0 auto;
+    padding: 25px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+.memoContainer {
+    width: 150px;
+    height: 60px;
+    overflow: hidden;
+}
+.memoContainer img {
+    width: 100%;
+    height: 100%;
+}
+.submitCost {
+    width: 80px;
+    height: 100px;
+    margin: 0 0 0 25px;
+}
+#tbody tr td {
+  padding: 8px;
+}
+.cost-back {
+    position: absolute;
+    right: 27px;
+}
+.currency-img {
+    width: 20px;
+    height: 20px;
+}
+.currecyStyle {
+       font-size: 24px;
+    float: left;
+    line-height: 1;
+    margin: 1px 1px 0 0;
+}
+.boxContainer .info-box-2 {
+  cursor: pointer;
+   height: 200px;
+}
+.info-box-2 .icon {
+    width: 70px;
+    float: left;
+}
+.info-box-2 .content {
+    margin: 0 auto;
+}
+.info-box-2 .content .text {
+    font-size: 30px;
+    margin-top: 20px;
+}
+.info-box-2 .content .number {
+    font-weight: bold;
+    font-size: 40px;
+    float: right;
+    margin: 30px 0 0 0;
+}
+.info-box-2 .icon i {
+    font-size: 65px;
+    font-weight: bold;
+}
+.box-cont {
+   float: left;
+    width: 32%;
+    margin-right: 25px;
+}
+.box-cont-last {
+   margin-right: 0;
+}
+.boxContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 0 1px 0 8px;
+}
+.boxContainer .text {
+  position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+.info-box-2 .icon .user-icon {
+  font-size: 45px;
+  margin-top: 16px;
+}
+.cahartContainer {
+  width: 90%;
+  min-width: 300px;
+  margin: 0 auto;
+}
+.currency-style {
+  font-size: 18px;
+  line-height: 1px;
+  font-weight: bold;
+}
+.logo-icon {
+  padding-left: 0;
+}
+.wizard > .steps > ul > li {
+    width: 50%;
+    float: left;
+}
+
+.userdetails table td p {
+  margin:3px;
+}
+.userdetails table td p > label {
+  width: 90px;
+  margin: 0;
+}
+.headerLogo {
+/*  padding: 0;
+  margin-left: 5%;*/
+}
+.headerLogo img {
+    height: 50px;
+    max-width: 250px;
+}
+
+.info-box-2 .icon {
+  padding-right: 5px;
+}
+.settingButton {
+  float: right;
+}
+.settings-container .settingHeading {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0 0 0;
+}
+.settings-container .settings-section {
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+.settings-container .number {
+    margin-right: 5px;
+    border-radius: 50%;
+    box-shadow: 0 0 2px #fff;
+    border: 2px solid #486962;
+    padding: 6px 10px 6px 10px;
+}
+.settings-container .settingButton {
+    float: right;
+    margin: 0 0 30px 0;
+}
+.editContainer {
+    display: none;
+}
+.detailsContainer, .editContainer {
+    width:720px;
+}
+.detailsContainer .logoContainer {
+    width: 110px;
+    height: 120px;
+    margin-bottom: 15px;
+}
+.detailsContainer .logoContainer img {
+    height: 70px;
+}
+.table.ac-details tbody tr td {
+  padding-left: 8px;
+}
+
+.partner-account-details .option-c {
+    margin: 0 25px 0 0;
+}
+.partner-account-details {
+    width: 1000px;
+}
+.share, h3{
+  /*color:#333;
+  text-align: center;*/
+}
+.total-cost.user-details {
+    width: 450px;
+    margin: 35px 18px 0 0;
+    display: inline-block;
+}
+.setting-table.table > thead:first-child > tr:first-child > th {
+    font-size: 18px;
+}
+.setting-table.table > thead:first-child > tr:first-child > th:first-child{
+    padding-left: 3px;
+}
+
+
+
+
+
+
+
+.partner-account-details .option-c {
+    margin: 0 25px 0 0;
+}
+.my-account-head {
+    width: 400px;
+    margin: 0 0 -85px 0;
+}
+.account-h.success {
+    background-color: #0a7b0a;
+}
+.account-h.warning {
+    background-color: #fb8000;
+}
+.account-h {
+    width: 300px;
+    color: white;
+    display: block;
+    text-align: left;
+    border-radius: 5px;
+    padding: 6px 0 8px 18px;
+    border: 1px solid rgba(0, 0, 0, .15);
+    box-shadow: 0 0 12px rgba(0, 0, 0, .175);
+}
+
+.my-account {
+  margin-bottom: 90px;
+}
+.my-account .my-info {
+  padding-bottom:35px;
+}
+.bg-color {
+  background: #273380;
+}
+.boxContainer .box-cont > a, .boxContainer .box-cont > .text,
+.boxContainer .box-cont .number{
+  color: white;
+}
+
+
+@media screen and (max-width: 1090px) {
+  .partner-account-details {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .info-box-2 .content .number {
+      font-size: 25px;
+  }
+  .info-box-2 .icon i {
+      font-size: 35px;
+  }
+  .info-box-2 .icon {
+    width: 35px;
+  }
+  .info-box-2 .icon .user-icon {
+    font-size: 30px;
+    margin: 8px 8px 0 0;
+  }
+  .info-box-2 .content {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .boxContainer .text {
+    font-size: 20px;
+  }
+  .boxContainer .info-box-2 {
+    height: 180px;
+  }
+}
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width: 1168px) {
+  .headerLogo {
+    display: none;
+  }
+}
+@media screen and (max-width: 1090px) {
+  .info-box-2 .icon {
+      width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+    .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+        margin: 0;
+    }
+}

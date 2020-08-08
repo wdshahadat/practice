@@ -1,0 +1,60 @@
+[02-Aug-2020 08:37:36 UTC] PHP Notice:  Undefined index: preLogo in /home/addawahf/shahadat-khan.com/demo/pms/action.php on line 34
+[02-Aug-2020 08:37:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/addawahf/shahadat-khan.com/demo/pms/action.php:34) in /home/addawahf/shahadat-khan.com/demo/pms/functions/CheckerFn.php on line 57
+[02-Aug-2020 08:41:26 UTC] PHP Warning:  require_once(/home/addawahf/shahadat-khan.com/demo/pms/functions/db.php): failed to open stream: No such file or directory in /home/addawahf/shahadat-khan.com/demo/pms/functions/SqlQuery.php on line 21
+[02-Aug-2020 08:41:26 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/addawahf/shahadat-khan.com/demo/pms/functions/db.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/addawahf/shahadat-khan.com/demo/pms/functions/SqlQuery.php on line 21
+[02-Aug-2020 08:48:26 UTC] PHP Deprecated:  filter_var(): explicit use of FILTER_FLAG_SCHEME_REQUIRED and FILTER_FLAG_HOST_REQUIRED is deprecated in /home/addawahf/shahadat-khan.com/demo/pms/phpMailer/src/PHPMailer.php on line 3631
+[02-Aug-2020 08:48:26 UTC] PHP Deprecated:  filter_var(): explicit use of FILTER_FLAG_SCHEME_REQUIRED and FILTER_FLAG_HOST_REQUIRED is deprecated in /home/addawahf/shahadat-khan.com/demo/pms/phpMailer/src/PHPMailer.php on line 3631
+[02-Aug-2020 08:48:26 UTC] PHP Deprecated:  filter_var(): explicit use of FILTER_FLAG_SCHEME_REQUIRED and FILTER_FLAG_HOST_REQUIRED is deprecated in /home/addawahf/shahadat-khan.com/demo/pms/phpMailer/src/PHPMailer.php on line 3631
+[02-Aug-2020 08:48:28 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/addawahf/shahadat-khan.com/demo/pms/phpMailer/src/PHPMailer.php:1943
+Stack trace:
+#0 /home/addawahf/shahadat-khan.com/demo/pms/phpMailer/src/PHPMailer.php(1757): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/addawahf/shahadat-khan.com/demo/pms/phpMailer/src/PHPMailer.php(1513): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Sun, 2 Au...', 'This is a multi...')
+#2 /home/addawahf/shahadat-khan.com/demo/pms/phpMailer/src/PHPMailer.php(1352): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/addawahf/shahadat-khan.com/demo/pms/SendMail.php(93): PHPMailer\PHPMailer\PHPMailer->send()
+#4 /home/addawahf/shahadat-khan.com/demo/pms/action.php(312): SendMail->send_mail(Array)
+#5 /home/addawahf/shahadat-khan.com/demo/pms/action.php(504): Action->manageUsers()
+#6 {main}
+  thrown in /home/addawahf/shahadat-khan.com/demo/pms/phpMailer/src/PHPMailer.php on line 1943
+[02-Aug-2020 09:07:44 UTC] PHP Deprecated:  filter_var(): explicit use of FILTER_FLAG_SCHEME_REQUIRED and FILTER_FLAG_HOST_REQUIRED is deprecated in /home/addawahf/shahadat-khan.com/demo/pms/phpMailer/src/PHPMailer.php on line 3631
+[02-Aug-2020 09:07:44 UTC] PHP Deprecated:  filter_var(): explicit use of FILTER_FLAG_SCHEME_REQUIRED and FILTER_FLAG_HOST_REQUIRED is deprecated in /home/addawahf/shahadat-khan.com/demo/pms/phpMailer/src/PHPMailer.php on line 3631
+[02-Aug-2020 09:07:44 UTC] PHP Deprecated:  filter_var(): explicit use of FILTER_FLAG_SCHEME_REQUIRED and FILTER_FLAG_HOST_REQUIRED is deprecated in /home/addawahf/shahadat-khan.com/demo/pms/phpMailer/src/PHPMailer.php on line 3631
+[02-Aug-2020 09:07:46 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/addawahf/shahadat-khan.com/demo/pms/phpMailer/src/PHPMailer.php:1943
+Stack trace:
+#0 /home/addawahf/shahadat-khan.com/demo/pms/phpMailer/src/PHPMailer.php(1757): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/addawahf/shahadat-khan.com/demo/pms/phpMailer/src/PHPMailer.php(1513): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Sun, 2 Au...', 'This is a multi...')
+#2 /home/addawahf/shahadat-khan.com/demo/pms/phpMailer/src/PHPMailer.php(1352): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/addawahf/shahadat-khan.com/demo/pms/SendMail.php(93): PHPMailer\PHPMailer\PHPMailer->send()
+#4 /home/addawahf/shahadat-khan.com/demo/pms/action.php(312): SendMail->send_mail(Array)
+#5 /home/addawahf/shahadat-khan.com/demo/pms/action.php(504): Action->manageUsers()
+#6 {main}
+  thrown in /home/addawahf/shahadat-khan.com/demo/pms/phpMailer/src/PHPMailer.php on line 1943
+[02-Aug-2020 09:08:33 UTC] PHP Deprecated:  filter_var(): explicit use of FILTER_FLAG_SCHEME_REQUIRED and FILTER_FLAG_HOST_REQUIRED is deprecated in /home/addawahf/shahadat-khan.com/demo/pms/phpMailer/src/PHPMailer.php on line 3631
+[02-Aug-2020 09:08:33 UTC] PHP Deprecated:  filter_var(): explicit use of FILTER_FLAG_SCHEME_REQUIRED and FILTER_FLAG_HOST_REQUIRED is deprecated in /home/addawahf/shahadat-khan.com/demo/pms/phpMailer/src/PHPMailer.php on line 3631
+[02-Aug-2020 09:08:33 UTC] PHP Deprecated:  filter_var(): explicit use of FILTER_FLAG_SCHEME_REQUIRED and FILTER_FLAG_HOST_REQUIRED is deprecated in /home/addawahf/shahadat-khan.com/demo/pms/phpMailer/src/PHPMailer.php on line 3631
+[02-Aug-2020 09:08:35 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/addawahf/shahadat-khan.com/demo/pms/phpMailer/src/PHPMailer.php:1943
+Stack trace:
+#0 /home/addawahf/shahadat-khan.com/demo/pms/phpMailer/src/PHPMailer.php(1757): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/addawahf/shahadat-khan.com/demo/pms/phpMailer/src/PHPMailer.php(1513): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Sun, 2 Au...', 'This is a multi...')
+#2 /home/addawahf/shahadat-khan.com/demo/pms/phpMailer/src/PHPMailer.php(1352): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/addawahf/shahadat-khan.com/demo/pms/SendMail.php(93): PHPMailer\PHPMailer\PHPMailer->send()
+#4 /home/addawahf/shahadat-khan.com/demo/pms/action.php(312): SendMail->send_mail(Array)
+#5 /home/addawahf/shahadat-khan.com/demo/pms/action.php(504): Action->manageUsers()
+#6 {main}
+  thrown in /home/addawahf/shahadat-khan.com/demo/pms/phpMailer/src/PHPMailer.php on line 1943
+[02-Aug-2020 09:11:49 UTC] PHP Warning:  require_once(/home/addawahf/shahadat-khan.com/demo/pms/functions/db.php): failed to open stream: No such file or directory in /home/addawahf/shahadat-khan.com/demo/pms/functions/SqlQuery.php on line 21
+[02-Aug-2020 09:11:49 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/addawahf/shahadat-khan.com/demo/pms/functions/db.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/addawahf/shahadat-khan.com/demo/pms/functions/SqlQuery.php on line 21
+[02-Aug-2020 09:14:09 UTC] PHP Deprecated:  filter_var(): explicit use of FILTER_FLAG_SCHEME_REQUIRED and FILTER_FLAG_HOST_REQUIRED is deprecated in /home/addawahf/shahadat-khan.com/demo/pms/phpMailer/src/PHPMailer.php on line 3631
+[02-Aug-2020 09:14:09 UTC] PHP Deprecated:  filter_var(): explicit use of FILTER_FLAG_SCHEME_REQUIRED and FILTER_FLAG_HOST_REQUIRED is deprecated in /home/addawahf/shahadat-khan.com/demo/pms/phpMailer/src/PHPMailer.php on line 3631
+[02-Aug-2020 15:41:59 UTC] PHP Deprecated:  filter_var(): explicit use of FILTER_FLAG_SCHEME_REQUIRED and FILTER_FLAG_HOST_REQUIRED is deprecated in /home/addawahf/shahadat-khan.com/demo/pms/phpMailer/src/PHPMailer.php on line 3631
+[02-Aug-2020 15:41:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/addawahf/shahadat-khan.com/demo/pms/phpMailer/src/PHPMailer.php:3631) in /home/addawahf/shahadat-khan.com/demo/pms/functions/CheckerFn.php on line 58
+[02-Aug-2020 18:49:20 UTC] PHP Notice:  Undefined index: passworda in /home/addawahf/shahadat-khan.com/demo/pmscopy/action.php on line 352
+[02-Aug-2020 18:49:21 UTC] PHP Deprecated:  filter_var(): explicit use of FILTER_FLAG_SCHEME_REQUIRED and FILTER_FLAG_HOST_REQUIRED is deprecated in /home/addawahf/shahadat-khan.com/demo/pmscopy/phpMailer/src/PHPMailer.php on line 3631
+[02-Aug-2020 18:53:34 UTC] PHP Notice:  Undefined index: password in /home/addawahf/shahadat-khan.com/demo/pmscopy/action.php on line 352
+[02-Aug-2020 18:53:35 UTC] PHP Deprecated:  filter_var(): explicit use of FILTER_FLAG_SCHEME_REQUIRED and FILTER_FLAG_HOST_REQUIRED is deprecated in /home/addawahf/shahadat-khan.com/demo/pmscopy/phpMailer/src/PHPMailer.php on line 3631
+[02-Aug-2020 18:59:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/addawahf/shahadat-khan.com/demo/pmscopy/action.php:20) in /home/addawahf/shahadat-khan.com/demo/pmscopy/functions/CheckerFn.php on line 58
+[02-Aug-2020 19:04:12 UTC] PHP Deprecated:  filter_var(): explicit use of FILTER_FLAG_SCHEME_REQUIRED and FILTER_FLAG_HOST_REQUIRED is deprecated in /home/addawahf/shahadat-khan.com/demo/pmscopy/phpMailer/src/PHPMailer.php on line 3631
+[02-Aug-2020 19:07:50 UTC] PHP Deprecated:  filter_var(): explicit use of FILTER_FLAG_SCHEME_REQUIRED and FILTER_FLAG_HOST_REQUIRED is deprecated in /home/addawahf/shahadat-khan.com/demo/pmscopy/phpMailer/src/PHPMailer.php on line 3636
+[02-Aug-2020 19:07:50 UTC] PHP Notice:  Undefined variable: host in /home/addawahf/shahadat-khan.com/demo/pmscopy/phpMailer/src/PHPMailer.php on line 3601
+[02-Aug-2020 19:07:50 UTC] PHP Deprecated:  filter_var(): explicit use of FILTER_FLAG_SCHEME_REQUIRED and FILTER_FLAG_HOST_REQUIRED is deprecated in /home/addawahf/shahadat-khan.com/demo/pmscopy/phpMailer/src/PHPMailer.php on line 3601
+[02-Aug-2020 19:10:15 UTC] PHP Notice:  Undefined variable: host in /home/addawahf/shahadat-khan.com/demo/pmscopy/phpMailer/src/PHPMailer.php on line 3601
+[02-Aug-2020 19:21:00 UTC] PHP Warning:  unlink(): No such file or directory in /home/addawahf/shahadat-khan.com/demo/pmscopy/action.php on line 80
